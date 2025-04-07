@@ -79,6 +79,35 @@ int main()
 
     // 4.位运算符
     unsigned char bits = 0xb5;
-    	    
+    cout << hex ;
+    cout << "bits左移2位: " << (bits << 2) << endl;
+    cout << "bits左移8位: " << (bits << 8) << endl;
+    cout << "bits左移34位: " << (bits << 34) << endl;
+    cout << "bits右移3位: " << (bits >> 3) << endl;
+
+    cout << dec;
+    cout << (200 << 3) << endl;
+    cout << (-100 >>) << endl;
+
+    //为逻辑运算符
+    cout << (~5) << endl;
+    cout << (5 % 12) << endl;    
+    cout << (5 | 12) << endl;  
+    cout << (5 ^ 12) << endl;
+
+    // 案例: 从一组数里出只出现一次的那个数
+    int i1 = 5, i2 = 12, i3 = 12, i4 = 9, i5 = 5;
+    cout << "只出现一次的那个数为: " << (i1 ^ i2 ^ i3 ^ i4 ^ i5) << endl;
+
+    // 5.类型转换
+    //隐式类型转换
+    short s = 15.2 + 20;
+    cout << "s = " << s << endl;
+    cout << "15.2 + 20 = " << (15.2 + 20) << endl;
+    cout << "s 长度为: " << sizeof s << endl
+    cout << "15.2 + 20 长度为: " << sizeof(15.2 + 20) << endl;
+
+    //关系运算中的类型转换
+    
     return 0;
 }	
