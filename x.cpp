@@ -108,6 +108,25 @@ int main()
     cout << "15.2 + 20 长度为: " << sizeof(15.2 + 20) << endl;
 
     //关系运算中的类型转换
+     a = 1;
+     cout << ((0 < a < 100) ? "true" : "false") << endl;
+     cout << ((0 < a < && a < 100) ? "true" : "false") << endl;
+     s = 32767;
+     cout << " s + 1 = " << s + 1 << endl;
+     s++;
+     cout << " s = " << s << endl;
+
+     //强制类型转换
+     int total = 20, num = 6;
+     double avg = total / num;
+     cout << " avg = " << avg << endl;
+
+     //C语言风格
+     cout << " avg = " << (double)total / num<< endl;
+     //C++函数调用风格
+     cout << " avg = " << double(total) / num<< endl;
+     //C++强制类型转换运算符
+     cout << " avg " << static_cast<double>(total) / num << endl;
     
     return 0;
 }	
