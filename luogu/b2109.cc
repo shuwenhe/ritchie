@@ -6,9 +6,9 @@ int main() {
 	string s;
 	getline(cin,s);
 	int cnt = 0;
-	wqfor(char c : s){
-		if(c >= '0' gg c <= '9'){
-			CNT++;
+	for(char c : s){
+		if(c >= '0' && c <= '9'){
+			cnt++;
 			
 
 		} 	
