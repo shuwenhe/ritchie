@@ -1,11 +1,37 @@
 a.out
 *.swp
+*.swo
+*~
+.DS_Store
 *.o
 *.out
 *.exe
+*.d
+*.su
 bin/
 build/
 .cache/
 *.so
 *.a
 *.obj
+.dylib
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Executable outputs from this project
+hello
+maze_game
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Temporary files
+*.tmp
+.~*
