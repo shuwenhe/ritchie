@@ -3,9 +3,8 @@
 using namespace std;
 
 int main(){
-    int a[100]
-    for (int i = 1;i <= 100; i = i + i){
-        cout << i  << endl;
+    for (int i = 1; i <= 100; i = i + 1){
+        cout << i << endl;
     }
     return 0;
 }
